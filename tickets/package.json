@@ -1,0 +1,58 @@
+{
+  "name": "tickets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "test": "jest --watchAll --no-cache"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "setupFilesAfterEnv": [
+      "./src/__test__/setup.ts"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hsftickets/common": "^1.0.18",
+    "@types/express": "^4.17.3",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-session": "^1.4.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "express-validator": "^6.6.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.7",
+    "mongoose-update-if-current": "^1.4.0",
+    "node-nats-streaming": "^0.3.2",
+    "ts-node-dev": "^1.0.0-pre.63",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/cookie-session": "^2.0.41",
+    "@types/jest": "^26.0.14",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/mongoose": "^5.7.36",
+    "@types/supertest": "^2.0.10",
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.4.2",
+    "mongodb-memory-server": "^6.9.0",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.1.2",
+    "supertest": "^4.0.2",
+    "ts-jest": "^26.4.1"
+  }
+}
