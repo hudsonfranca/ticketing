@@ -55,10 +55,10 @@ userSchema.pre('save', async function (done) {
   done();
 });
 
-const User = mongoose.model<UserDoc, userModel>('User', userSchema);
-
 userSchema.statics.build = (attrs: UserAttrs) => {
   return new User(attrs);
 };
+
+const User = mongoose.model<UserDoc, userModel>('User', userSchema);
 
 export default User;
